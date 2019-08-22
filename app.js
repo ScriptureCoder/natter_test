@@ -32,22 +32,8 @@ app.post('/question_two', (req,res)=>{
 
 });
 
-app.post('/question_three', (req,res)=>{
-    let { data, item } = req.body;
-
-    if (data[item]){
-        delete data[item];
-        return res.json({
-            status: true,
-            data: data
-        })
-    } else {
-        return res.status(404).json({
-            status: false,
-            message: "attribute not found"
-        })
-    }
-
+app.use("*",(req,res)=>{
+    return res.send("Hello There, Welcome to NatterBase Nodejs Test API")
 });
 
 
