@@ -1,7 +1,7 @@
 {
   "name": "natterbase_nodejs_test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/scripturecoder/natter_test.git",
   "author": "Samson Akinfenwa (ScriptureCoder)",
   "license": "MIT",
